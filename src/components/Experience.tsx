@@ -64,7 +64,7 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 bg-gradient-to-br from-white via-gray-50 to-blue-50">
+    <section id="experience" className="py-20 bg-gradient-to-br from-white via-gray-50 to-[#1FB8CD]/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -73,7 +73,7 @@ const Experience = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 bg-gradient-to-r from-[#1FB8CD] to-[#1FB8CD] bg-clip-text text-transparent">
             Experience & Education
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -90,16 +90,16 @@ const Experience = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="relative bg-white rounded-3xl shadow-xl p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100"
+              className="relative bg-white rounded-3xl shadow-xl p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-[#1FB8CD]/20"
             >
               {/* Experience Header */}
               <div className="flex items-start gap-6 mb-6">
-                <div className="p-4 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-2xl">
+                <div className="p-4 bg-gradient-to-br from-[#1FB8CD]/10 to-[#1FB8CD]/5 rounded-2xl">
                   {expIcons[index % expIcons.length]}
                 </div>
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">{exp.title}</h3>
-                  <p className="text-lg text-blue-600 font-semibold mb-2">@ {exp.company}</p>
+                  <p className="text-lg text-[#1FB8CD] font-semibold mb-2">@ {exp.company}</p>
                   <div className="flex flex-wrap items-center gap-4 text-sm text-gray-500">
                     <span className="flex items-center gap-1">
                       <Calendar size={16} /> 
@@ -139,7 +139,7 @@ const Experience = () => {
                 <h4 className="font-semibold text-gray-900 mb-3">Technologies & Skills</h4>
                 <div className="flex flex-wrap gap-2">
                   {exp.technologies.map((tech, techIndex) => (
-                    <span key={techIndex} className="px-4 py-2 bg-blue-50 text-blue-700 rounded-full text-sm font-medium border border-blue-200">
+                    <span key={techIndex} className="px-4 py-2 bg-[#1FB8CD]/10 text-[#1FB8CD] rounded-full text-sm font-medium border border-[#1FB8CD]/20">
                       {tech}
                     </span>
                   ))}
@@ -157,11 +157,11 @@ const Experience = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="mt-20"
         >
-          <h3 className="text-3xl font-bold text-gray-900 mb-12 text-center">Certifications & Achievements</h3>
+          <h3 className="text-3xl font-bold text-gray-900 mb-12 text-center bg-gradient-to-r from-[#1FB8CD] to-[#1FB8CD] bg-clip-text text-transparent">Certifications & Achievements</h3>
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 border border-gray-100">
+            <div className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 border border-[#1FB8CD]/20">
               <div className="flex items-center gap-4">
-                <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-500 rounded-xl flex items-center justify-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-[#1FB8CD] to-[#1FB8CD]/80 rounded-xl flex items-center justify-center">
                   <span className="text-white font-bold text-lg">AWS</span>
                 </div>
                 <div className="flex-1">
@@ -171,9 +171,9 @@ const Experience = () => {
               </div>
             </div>
 
-            <div className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 border border-gray-100">
+            <div className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 border border-[#1FB8CD]/20">
               <div className="flex items-center gap-4">
-                <div className="w-16 h-16 bg-gradient-to-br from-red-500 to-red-700 rounded-xl flex items-center justify-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-[#1FB8CD] to-[#1FB8CD]/80 rounded-xl flex items-center justify-center">
                   <span className="text-white font-bold text-lg">RH</span>
                 </div>
                 <div className="flex-1">
@@ -183,9 +183,9 @@ const Experience = () => {
               </div>
             </div>
 
-            <div className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 border border-gray-100">
+            <div className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 border border-[#1FB8CD]/20">
               <div className="flex items-center gap-4">
-                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-700 rounded-xl flex items-center justify-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-[#1FB8CD] to-[#1FB8CD]/80 rounded-xl flex items-center justify-center">
                   <span className="text-white font-bold text-lg">MS</span>
                 </div>
                 <div className="flex-1">
@@ -195,9 +195,9 @@ const Experience = () => {
               </div>
             </div>
 
-            <div className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 border border-gray-100">
+            <div className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 border border-[#1FB8CD]/20">
               <div className="flex items-center gap-4">
-                <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-700 rounded-xl flex items-center justify-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-[#1FB8CD] to-[#1FB8CD]/80 rounded-xl flex items-center justify-center">
                   <span className="text-white font-bold text-lg">CE</span>
                 </div>
                 <div className="flex-1">

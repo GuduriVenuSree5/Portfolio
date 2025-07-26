@@ -27,7 +27,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-gray-900 via-blue-900 to-indigo-900">
+    <section id="contact" className="py-20 bg-gradient-to-br from-gray-900 via-gray-800 to-[#1FB8CD]/30">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -36,10 +36,10 @@ const Contact = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 bg-gradient-to-r from-[#1FB8CD] to-[#1FB8CD] bg-clip-text text-transparent">
             Let's Connect
           </h2>
-          <p className="text-xl text-blue-200 max-w-3xl mx-auto">
+          <p className="text-xl text-[#1FB8CD] max-w-3xl mx-auto">
             I'm always interested in new opportunities and exciting projects.
             Let's discuss how we can work together!
           </p>
@@ -56,10 +56,10 @@ const Contact = () => {
           >
             <div>
               <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-                <MessageCircle className="w-6 h-6 text-blue-400" />
+                <MessageCircle className="w-6 h-6 text-[#1FB8CD]" />
                 Get In Touch
               </h3>
-              <p className="text-blue-200 mb-8 leading-relaxed">
+              <p className="text-[#1FB8CD] mb-8 leading-relaxed">
                 Ready to start a conversation? Whether you have a project in mind, 
                 want to discuss opportunities, or just want to say hello, I'd love to hear from you.
               </p>
@@ -67,52 +67,52 @@ const Contact = () => {
 
             <div className="space-y-6">
               <div className="flex items-center gap-4 p-4 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
-                <div className="p-3 bg-blue-500/20 rounded-xl">
-                  <MapPin className="w-6 h-6 text-blue-400" />
+                <div className="p-3 bg-[#1FB8CD]/20 rounded-xl">
+                  <MapPin className="w-6 h-6 text-[#1FB8CD]" />
                 </div>
                 <div>
                   <div className="font-semibold text-white">Location</div>
-                  <div className="text-blue-200">Tiruvuru, Andhra Pradesh</div>
+                  <div className="text-[#1FB8CD]">Tiruvuru, Andhra Pradesh</div>
                 </div>
               </div>
 
               <div className="flex items-center gap-4 p-4 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
-                <div className="p-3 bg-green-500/20 rounded-xl">
-                  <Mail className="w-6 h-6 text-green-400" />
+                <div className="p-3 bg-[#1FB8CD]/20 rounded-xl">
+                  <Mail className="w-6 h-6 text-[#1FB8CD]" />
                 </div>
                 <div>
                   <div className="font-semibold text-white">Email</div>
-                  <a href="mailto:2200031051cseh@gmail.com" className="text-blue-200 hover:text-white transition-colors">2200031051cseh@gmail.com</a>
+                  <a href="mailto:2200031051cseh@gmail.com" className="text-[#1FB8CD] hover:text-white transition-colors">2200031051cseh@gmail.com</a>
                 </div>
               </div>
 
               <div className="flex items-center gap-4 p-4 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
-                <div className="p-3 bg-purple-500/20 rounded-xl">
-                  <Phone className="w-6 h-6 text-purple-400" />
+                <div className="p-3 bg-[#1FB8CD]/20 rounded-xl">
+                  <Phone className="w-6 h-6 text-[#1FB8CD]" />
                 </div>
                 <div>
                   <div className="font-semibold text-white">Phone</div>
-                  <div className="text-blue-200">8121913956</div>
+                  <div className="text-[#1FB8CD]">8121913956</div>
                 </div>
               </div>
 
               <div className="flex items-center gap-4 p-4 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
-                <div className="p-3 bg-blue-500/20 rounded-xl">
-                  <Linkedin className="w-6 h-6 text-blue-400" />
+                <div className="p-3 bg-[#1FB8CD]/20 rounded-xl">
+                  <Linkedin className="w-6 h-6 text-[#1FB8CD]" />
                 </div>
                 <div>
                   <div className="font-semibold text-white">LinkedIn</div>
-                  <a href="https://linkedin.com/in/venusree" target="_blank" rel="noopener noreferrer" className="text-blue-200 hover:text-white transition-colors">linkedin.com/in/venusree</a>
+                  <a href="https://linkedin.com/in/venusree" target="_blank" rel="noopener noreferrer" className="text-[#1FB8CD] hover:text-white transition-colors">linkedin.com/in/venusree</a>
                 </div>
               </div>
 
               <div className="flex items-center gap-4 p-4 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
-                <div className="p-3 bg-gray-500/20 rounded-xl">
-                  <Github className="w-6 h-6 text-gray-400" />
+                <div className="p-3 bg-[#1FB8CD]/20 rounded-xl">
+                  <Github className="w-6 h-6 text-[#1FB8CD]" />
                 </div>
                 <div>
                   <div className="font-semibold text-white">GitHub</div>
-                  <a href="https://github.com/GuduriVenuSree5" target="_blank" rel="noopener noreferrer" className="text-blue-200 hover:text-white transition-colors">github.com/GuduriVenuSree5</a>
+                  <a href="https://github.com/GuduriVenuSree5" target="_blank" rel="noopener noreferrer" className="text-[#1FB8CD] hover:text-white transition-colors">github.com/GuduriVenuSree5</a>
                 </div>
               </div>
             </div>
@@ -125,7 +125,7 @@ const Contact = () => {
               <a href="https://linkedin.com/in/venusree" target="_blank" rel="noopener noreferrer" className="p-3 bg-white/10 backdrop-blur-sm rounded-xl hover:bg-white/20 transition-all duration-300 border border-white/20 hover:border-white/40" aria-label="LinkedIn">
                 <Linkedin className="w-6 h-6 text-white" />
               </a>
-              <a href="mailto:2200031051cseh@gmail.com" className="p-3 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-xl hover:from-blue-600 hover:to-indigo-600 transition-all duration-300 shadow-lg hover:shadow-xl" aria-label="Email">
+              <a href="mailto:2200031051cseh@gmail.com" className="p-3 bg-gradient-to-r from-[#1FB8CD] to-[#1FB8CD] rounded-xl hover:from-[#1FB8CD]/90 hover:to-[#1FB8CD]/90 transition-all duration-300 shadow-lg hover:shadow-xl" aria-label="Email">
                 <Mail className="w-6 h-6 text-white" />
               </a>
             </div>
@@ -143,7 +143,7 @@ const Contact = () => {
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-blue-200 mb-2">
+                    <label htmlFor="name" className="block text-sm font-medium text-[#1FB8CD] mb-2">
                       Name
                     </label>
                     <input
@@ -153,12 +153,12 @@ const Contact = () => {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 text-white placeholder-blue-300"
+                      className="w-full px-4 py-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl focus:ring-2 focus:ring-[#1FB8CD] focus:border-transparent transition-all duration-200 text-white placeholder-[#1FB8CD]/70"
                       placeholder="Your Name"
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-blue-200 mb-2">
+                    <label htmlFor="email" className="block text-sm font-medium text-[#1FB8CD] mb-2">
                       Email
                     </label>
                     <input
@@ -168,13 +168,13 @@ const Contact = () => {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 text-white placeholder-blue-300"
+                      className="w-full px-4 py-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl focus:ring-2 focus:ring-[#1FB8CD] focus:border-transparent transition-all duration-200 text-white placeholder-[#1FB8CD]/70"
                       placeholder="your.email@example.com"
                     />
                   </div>
                 </div>
                 <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-blue-200 mb-2">
+                  <label htmlFor="subject" className="block text-sm font-medium text-[#1FB8CD] mb-2">
                     Subject
                   </label>
                   <input
@@ -184,12 +184,12 @@ const Contact = () => {
                     value={formData.subject}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 text-white placeholder-blue-300"
+                    className="w-full px-4 py-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl focus:ring-2 focus:ring-[#1FB8CD] focus:border-transparent transition-all duration-200 text-white placeholder-[#1FB8CD]/70"
                     placeholder="What's this about?"
                   />
                 </div>
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-blue-200 mb-2">
+                  <label htmlFor="message" className="block text-sm font-medium text-[#1FB8CD] mb-2">
                     Message
                   </label>
                   <textarea
@@ -199,7 +199,7 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     rows={6}
-                    className="w-full px-4 py-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 resize-none text-white placeholder-blue-300"
+                    className="w-full px-4 py-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl focus:ring-2 focus:ring-[#1FB8CD] focus:border-transparent transition-all duration-200 resize-none text-white placeholder-[#1FB8CD]/70"
                     placeholder="Tell me about your project or just say hello!"
                   />
                 </div>
@@ -207,7 +207,7 @@ const Contact = () => {
                   type="submit"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className="w-full bg-gradient-to-r from-blue-500 to-indigo-500 text-white py-4 px-6 rounded-xl font-semibold hover:from-blue-600 hover:to-indigo-600 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
+                  className="w-full bg-gradient-to-r from-[#1FB8CD] to-[#1FB8CD] text-white py-4 px-6 rounded-xl font-semibold hover:from-[#1FB8CD]/90 hover:to-[#1FB8CD]/90 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
                 >
                   <Send className="w-5 h-5" />
                   Send Message

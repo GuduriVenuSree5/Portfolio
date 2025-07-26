@@ -40,7 +40,7 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-gradient-to-br from-gray-50 via-white to-blue-50">
+    <section id="projects" className="py-20 bg-gradient-to-br from-gray-50 via-white to-[#1FB8CD]/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -49,7 +49,7 @@ const Projects = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 bg-gradient-to-r from-[#1FB8CD] to-[#1FB8CD] bg-clip-text text-transparent">
             Featured Projects
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -65,17 +65,17 @@ const Projects = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              className="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-4 border border-gray-100"
+              className="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-4 border border-[#1FB8CD]/20"
             >
               {/* Project Header */}
-              <div className="bg-gradient-to-r from-blue-600 to-indigo-600 p-8 text-white">
+              <div className="bg-gradient-to-r from-[#1FB8CD] to-[#1FB8CD] p-8 text-white">
                 <div className="flex items-center gap-4 mb-4">
                   <div className="p-3 bg-white/20 rounded-xl backdrop-blur-sm">
                     {projectIcons[index % projectIcons.length]}
                   </div>
                   <h3 className="text-2xl font-bold flex-1">{project.title}</h3>
                 </div>
-                <p className="text-blue-100 leading-relaxed">
+                <p className="text-white/90 leading-relaxed">
                   {project.description}
                 </p>
               </div>
@@ -102,12 +102,12 @@ const Projects = () => {
                 {project.techStack && (
                   <div className="mb-6">
                     <h4 className="font-semibold text-gray-900 mb-3 flex items-center gap-2">
-                      <Code className="w-5 h-5 text-blue-600" />
+                      <Code className="w-5 h-5 text-[#1FB8CD]" />
                       Tech Stack
                     </h4>
                     <div className="flex flex-wrap gap-2">
                       {project.techStack.map((tech, i) => (
-                        <span key={i} className="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium border border-blue-200">
+                        <span key={i} className="px-3 py-1 bg-[#1FB8CD]/10 text-[#1FB8CD] rounded-full text-sm font-medium border border-[#1FB8CD]/20">
                           {tech}
                         </span>
                       ))}
@@ -134,7 +134,7 @@ const Projects = () => {
               </div>
 
               {/* Project Footer */}
-              <div className="bg-gray-50 px-8 py-6 border-t border-gray-100">
+              <div className="bg-gray-50 px-8 py-6 border-t border-[#1FB8CD]/20">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2 text-gray-600">
                     <div className="w-2 h-2 bg-green-500 rounded-full"></div>
@@ -144,7 +144,7 @@ const Projects = () => {
                     <button className="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-colors duration-200 text-sm font-medium">
                       View Details
                     </button>
-                    <button className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-200 text-sm font-medium">
+                    <button className="px-4 py-2 bg-[#1FB8CD] text-white rounded-lg hover:bg-[#1FB8CD]/90 transition-colors duration-200 text-sm font-medium">
                       Live Demo
                     </button>
                   </div>
@@ -162,14 +162,14 @@ const Projects = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="text-center mt-16"
         >
-          <div className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-3xl p-8 md:p-12 text-white">
+          <div className="bg-gradient-to-r from-[#1FB8CD] to-[#1FB8CD] rounded-3xl p-8 md:p-12 text-white">
             <h3 className="text-3xl font-bold mb-4">Interested in Working Together?</h3>
-            <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+            <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
               I'm always open to discussing new opportunities and exciting projects. Let's create something amazing together!
             </p>
             <a
               href="#contact"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-white text-blue-600 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-white text-[#1FB8CD] rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               Get In Touch
               <ExternalLink size={20} />
